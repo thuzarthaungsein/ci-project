@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY app.py .
 
-RUN useradd -m appuser && chown -R appuser:appuser /app
+RUN adduser -D appuser && chown -R appuser:appuser /app
 USER appuser
 
 CMD [ "python", "app.py" ]
