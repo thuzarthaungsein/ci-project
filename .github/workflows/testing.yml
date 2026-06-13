@@ -1,0 +1,12 @@
+name: First CI Lab
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  print-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Hello Friend! GitHub Actions is working perfectly."
